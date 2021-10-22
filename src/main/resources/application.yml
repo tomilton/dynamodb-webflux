@@ -1,0 +1,20 @@
+aws:
+  accessKey: s8f4lh
+  secretKey: nz0tsb
+
+spring:
+  application:
+    name: person-service
+
+server:
+  port: 8080
+
+dynamodb:
+  endpoint: http://localhost:4566/
+
+config:
+  base:
+    endpoint: /api/person/
+
+logging:
+  pattern.console: "%d{dd.MM.yy HH:mm:ss} %-5level [%mdc]  %logger{36} - %msg%n"
